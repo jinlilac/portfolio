@@ -22,5 +22,14 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "types": ["vite/client"],
+  "include": [
+    "src",
+    ".eslintrc.cjs",
+    "vite.config.ts",
+    "tailwind.config.ts",
+    "postcss.config.js",
+    "src/svg.d.ts",
+    "src/vite-env.d.ts"
+  ]
 }
