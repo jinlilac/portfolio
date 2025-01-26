@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Noto Sans KR", "Poppins", serif;
+  color: #2f2f2f;
+}
+
+h1 {
+  font-family: "Caveat Brush";
+}
+
+.project .swiper-button-prev,
+.project .swiper-button-next {
+  color: #9747ff;
+}
+
+.project .swiper-pagination-bullet-active {
+  background: #9747ff;
+}
+
+.contact .span {
+  font-size: 72px;
+  font-weight: 600;
+  background: #9759bb;
+  background: linear-gradient(-154deg, #9759bb 20%, #fca6c6 60%, #f6af97 80%);
+  -webkit-text-fill-color: transparent;
+}
