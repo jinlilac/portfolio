@@ -12,7 +12,7 @@ export default function Project() {
   );
 
   return (
-    <div className="h-screen px-32">
+    <div className="h-dvh lg:px-32 px-4">
       <ProjectTemplate data={sortedData} />
     </div>
   );

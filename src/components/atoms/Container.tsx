@@ -41,6 +41,16 @@ const FlexRowContainer: FC<ContainerProps> = ({
   </div>
 );
 
+const MobileContainer: FC<ContainerProps> = ({
+  children,
+  className = "",
+  ...others
+}) => (
+  <div className={cn("lg:flex-row flex-col flex", className)} {...others}>
+    {children}
+  </div>
+);
+
 const FlexColumnContainer: ForwardRefRenderFunction<
   HTMLDivElement,
   ContainerProps
@@ -53,3 +63,4 @@ const FlexColumnContainer: ForwardRefRenderFunction<
 Container.FlexRow = FlexRowContainer;
 Container.FlexCol = forwardRef(FlexColumnContainer);
 Container.Grid = GridContainer;
+Container.Mobile = MobileContainer;

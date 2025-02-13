@@ -1,6 +1,5 @@
 import Container from "@/components/atoms/Container";
 import Typography from "@/components/atoms/Typography";
-import { Link } from "react-router-dom";
 
 type HeaderProps = {
   sections: string[]; // HEADER 배열
@@ -14,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({
   onClick,
 }) => {
   return (
-    <Container.FlexRow className="gap-4 fixed left-0 top-5 justify-end z-10 w-full pr-28">
+    <Container.FlexRow className="gap-4 hidden lg:flex lg:fixed left-0 top-5 justify-end z-10 w-full pr-28">
       {sections.map((section, index) => (
         <div
           key={section}

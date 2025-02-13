@@ -23,27 +23,27 @@ export default function ProjectTemplate({ data }: { data: ProjectType[] }) {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      className="project h-screen"
+      className="project h-dvh"
     >
       {data?.map((project) => (
-        <SwiperSlide className="h-full px-14">
+        <SwiperSlide className="h-full lg:px-14">
           <ProjectCard {...project} />
         </SwiperSlide>
       ))}
-      <SwiperSlide className="h-full px-12">
-        <Container.FlexCol className="h-screen justify-center gap-2">
+      <SwiperSlide className="h-full w-full lg:px-12">
+        <Container.FlexCol className="lg:h-screen justify-center gap-2">
           <Typography.Head2>포스터 디자인</Typography.Head2>
-          <Container.FlexRow className="items-center gap-3 ">
+          <Container.FlexRow className="items-center gap-3 w-full">
             <img
               src="/src/assets/imgs/design.jpg"
-              className="flex-1 max-h-[580px] object-contain"
+              className="lg:flex-1 w-1/2 h-[340px] lg:max-h-[580px] lg:h-full object-contain"
             />
             <img
               src="/src/assets/imgs/design_2.png"
-              className="flex-1 max-h-[580px] object-contain"
+              className="lg:flex-1 w-1/2 h-[340px] lg:max-h-[580px] lg:h-full object-contain"
             />
           </Container.FlexRow>
-          <Container.FlexCol className="gap-2 ">
+          <Container.FlexCol className="gap-2">
             <Typography.SubTitle1>OVERVIEW:</Typography.SubTitle1>
             <Typography.P1 className="whitespace-pre-wrap">
               포스터의 목적에 따라 디자인 컨셉을 정하고, Photoshop과

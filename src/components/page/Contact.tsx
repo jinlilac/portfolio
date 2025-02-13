@@ -4,9 +4,9 @@ import ContactTemplate from "@/components/templates/Contact.template";
 
 export default function Contact() {
   return (
-    <Container.FlexCol className="h-screen justify-center relative">
+    <Container.FlexCol className="h-dvh justify-center relative">
       <ContactTemplate />
-      <Container.FlexCol className="items-center p-6 absolute bottom-3 left-0 right-0">
+      <Container.FlexCol className="items-center bottom-5 p-6 absolute lg:bottom-3 left-0 right-0">
         <Typography.Span1>
           본 사이트는 상업적 용도가 아닌 개인 포트폴리오 용으로 제작 되었습니다.
         </Typography.Span1>

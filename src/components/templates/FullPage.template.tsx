@@ -1,4 +1,3 @@
-import { Dots } from "@/components/organisms/Dot";
 import { Header } from "@/components/organisms/Header";
 import { PropsWithChildren, useEffect, useRef, useState } from "react";
 
@@ -62,9 +61,9 @@ export const FullPageScroll: React.FC<PFullPageScroll> = ({
     if (!canScroll.current) return;
     const { deltaY } = e; // +is down -is up
     console.log("scroll to", outerDivRef.current?.scrollHeight);
-    if (deltaY > 0 && outerDivRef.current) {
+    if (deltaY > 20 && outerDivRef.current) {
       scrollDown();
-    } else if (deltaY < 0 && outerDivRef.current) {
+    } else if (deltaY < -20 && outerDivRef.current) {
       scrollUp();
     }
   }; // wheel Handler
@@ -79,12 +78,10 @@ export const FullPageScroll: React.FC<PFullPageScroll> = ({
 
   const onTouchUp = (e: TouchEvent) => {
     const currentTouchY = e.changedTouches.item(0)?.clientY || 0;
-    const isScrollDown: boolean =
-      oldTouchY.current - currentTouchY > 0 ? true : false;
 
-    if (isScrollDown) {
+    if (oldTouchY.current - currentTouchY > 80) {
       scrollDown();
-    } else {
+    } else if (oldTouchY.current - currentTouchY < -80) {
       scrollUp();
     }
   };
@@ -120,14 +117,9 @@ export const FullPageScroll: React.FC<PFullPageScroll> = ({
         currentIndex={currentPage.current}
         onClick={movePageTo}
       />
-      <div ref={outerDivRef} className="h-screen w-full overflow-hidden ">
+      <div ref={outerDivRef} className="h-dvh w-full overflow-hidden">
         {children}
       </div>
-      {/* <Dots
-        limit={outerDivRef.current?.childElementCount || 0}
-        currentIndex={currentPage.current}
-        onDotClick={movePageTo}
-      /> */}
     </>
   );
 };

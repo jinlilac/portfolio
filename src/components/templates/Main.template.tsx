@@ -3,14 +3,14 @@ import Typography from "@/components/atoms/Typography";
 
 export default function MainTemplate() {
   return (
-    <Container.FlexCol className="h-screen relative">
+    <Container.FlexCol className="h-dvh relative">
       <div className="bg-main w-full h-full bg-cover inset-0 bg-center animate-bg" />
       <div className="absolute inset-0 inset-y-1/4 text-center text-white animate-fadeScale">
         <h1
           style={{
-            fontSize: "8rem",
             WebkitTextStroke: "3px #D797EE",
           }}
+          className="text-[6rem] lg:text-[8rem]"
         >
           PORTFOLIO
         </h1>
