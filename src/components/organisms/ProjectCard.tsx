@@ -70,9 +70,11 @@ export default function ProjectCard(props: ProjectType) {
             </Container.FlexCol>
 
             <Container.FlexRow className="gap-4">
-              <Button.Fill onClick={() => window.open(site)}>
-                사이트 보기
-              </Button.Fill>
+              {site && (
+                <Button.Fill onClick={() => window.open(site)}>
+                  사이트 보기
+                </Button.Fill>
+              )}
               <Button.Fill onClick={() => window.open(git)} disabled={!git}>
                 코드 리뷰
               </Button.Fill>
