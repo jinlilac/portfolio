@@ -64,3 +64,28 @@ a {
   background: linear-gradient(-154deg, #9759bb 20%, #fca6c6 60%, #f6af97 80%);
   -webkit-text-fill-color: transparent;
 }
+@keyframes text-wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-12px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+}
+
+.wave-char {
+  display: inline-block;
+}
+.contact-hover:hover .wave-char {
+  animation: text-wave 1.2s both;
+}
