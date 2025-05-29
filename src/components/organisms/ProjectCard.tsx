@@ -1,4 +1,5 @@
 import Button from "@/components/atoms/Button";
+import Chip from "@/components/atoms/Chip";
 import Container from "@/components/atoms/Container";
 import Img from "@/components/atoms/Img";
 import Typography from "@/components/atoms/Typography";
@@ -58,7 +59,10 @@ export default function ProjectCard(props: ProjectType) {
               <LabelText label="프로젝트 범위:" text={range} />
               <LabelText label="프로젝트 기여도:" text={contribution} />
               <LabelText label="제작기간:" text={term} />
-              <LabelText label="Tool:" text={tool} />
+              {/* <LabelText label="Tool:" text={tool} /> */}
+              <Container.FlexRow className="gap-2 flex-wrap">
+                {tool?.map((label) => <Chip label={label} />)}
+              </Container.FlexRow>
             </Container.FlexCol>
             <Container.FlexCol className="lg:gap-2">
               <Typography.SubTitle1 className="text-P1 font-bold lg:text-Head3">
