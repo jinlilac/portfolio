@@ -11,7 +11,7 @@ export default function Contact() {
           본 사이트는 상업적 용도가 아닌 개인 포트폴리오 용으로 제작 되었습니다.
         </Typography.Span1>
         <Typography.Span1>
-          Copyright©Kimcode. All Rights Reserved.
+          Copyright©coduit. All Rights Reserved.
         </Typography.Span1>
       </Container.FlexCol>
     </Container.FlexCol>

@@ -22,6 +22,7 @@ export default function ProjectTemplate({ data }: { data: ProjectType[] }) {
       spaceBetween={50}
       slidesPerView={1}
       navigation
+      loop
       pagination={{ clickable: true }}
       className="project h-dvh"
     >

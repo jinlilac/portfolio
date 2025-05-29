@@ -4,7 +4,7 @@ export const PROFILE = [
     content: [
       { label: "Name", text: "김수현" },
       { label: "Birth", text: "1999.02.19" },
-      { label: "Email", text: "jinlilac24@gmail.com" },
+      { label: "Email", text: "coduit.99@gmail.com" },
     ],
   },
   {
@@ -21,11 +21,17 @@ export const PROFILE = [
     ],
   },
   {
-    title: "CERTIFICATE",
+    title: "EXPERIENCE",
     content: [
-      { label: "2020.09", text: "운전면허 2종" },
-      { label: "2022.05", text: "중어 HSK 6급" },
-      { label: "2023.07", text: "TOEIC-Speaking Lv.IH" },
+      {
+        label: "2025.03 ~ 2025.05",
+        text: "스티치(STITCH) 프론트엔드 개발 팀장",
+      },
+      {
+        label: "2024.08 ~ 2025.01",
+        text: "(주) 세레머니 프론트엔드 개발 사원",
+      },
+      { label: "2021.12 ~ 2022.03", text: "LG CNS 재무 및 경영지원 인턴" },
     ],
   },
 ];

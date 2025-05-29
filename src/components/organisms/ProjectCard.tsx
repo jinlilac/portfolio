@@ -17,7 +17,7 @@ const LabelText = ({
       <Typography.P2 className="whitespace-nowrap text-P3 lg:text-P2">
         {label}
       </Typography.P2>
-      <Typography.P1 className="whitespace-pre-line text-P2 lg:text-P1">
+      <Typography.P1 className="whitespace-pre-wrap max-w-[700px] text-P2 lg:text-P1 xl:max-w-[800px]">
         {displayText}
       </Typography.P1>
     </Container.FlexRow>
@@ -43,7 +43,7 @@ export default function ProjectCard(props: ProjectType) {
 
   return (
     show && (
-      <Container.FlexCol className="h-full w-full lg:justify-center">
+      <Container.FlexCol className="h-full w-full items-center lg:items-stretch  lg:justify-center">
         <Typography.Head2 className="text-P1 font-bold lg:text-Head2 lg:mb-5 text-center lg:text-start">{`${order} ${title}`}</Typography.Head2>
         <Container.Mobile className="gap-2 md:gap-12 lg:h-full lg:max-h-[520px] lg:justify-center">
           <Img
@@ -64,7 +64,7 @@ export default function ProjectCard(props: ProjectType) {
               <Typography.SubTitle1 className="text-P1 font-bold lg:text-Head3">
                 OVERVIEW:
               </Typography.SubTitle1>
-              <Typography.P1 className="whitespace-pre-wrap text-P2 lg:text-P1">
+              <Typography.P1 className="whitespace-pre-wrap text-P2 lg:text-P1 xl:max-w-[800px]">
                 {description}
               </Typography.P1>
             </Container.FlexCol>

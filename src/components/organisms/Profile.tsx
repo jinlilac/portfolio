@@ -16,8 +16,9 @@ export default function Profile({
           {section.content.map((value, index) => {
             // 조건에 따라 스타일을 변경
             const isEducationSection = section.title === "EDUCATION";
+            const isExperience = section.title === "EXPERIENCE";
 
-            return isEducationSection ? (
+            return isEducationSection || isExperience ? (
               <Container.FlexCol
                 key={`${value.label}_${index}`}
                 className="gap-2"
