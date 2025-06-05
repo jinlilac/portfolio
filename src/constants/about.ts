@@ -25,7 +25,7 @@ export const PROFILE = [
     content: [
       {
         label: "2025.03 ~ 2025.05",
-        text: "스티치(STITCH) 프론트엔드 개발 팀장",
+        text: "스티치(STITCH) 프론트엔드 개발 사원",
       },
       {
         label: "2024.08 ~ 2025.01",
