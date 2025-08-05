@@ -1,10 +1,10 @@
 import ProjectTemplate from "@/components/templates/Project.template";
-import { ProjectQuery } from "@/hooks/useProject";
+import { ProjectListQuery } from "@/hooks/useProject";
 import { ProjectType } from "@/types/project";
 import { useQuery } from "@tanstack/react-query";
 
 export default function Project() {
-  const { data, isLoading } = useQuery<ProjectType[]>(ProjectQuery());
+  const { data, isLoading } = useQuery<ProjectType[]>(ProjectListQuery());
   if (isLoading) return <div>Loading...</div>;
 
   const sortedData = [...(data || [])].sort(
