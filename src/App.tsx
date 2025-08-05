@@ -1,4 +1,7 @@
 import "@/App.css";
+import ErrorBoundary from "@/components/common/ErrorBoundary";
+import { AppProvider } from "@/contexts/AppContext";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 import Router from "@/Router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
@@ -14,7 +17,13 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Router />
+      <ErrorBoundary>
+        <ThemeProvider>
+          <AppProvider>
+            <Router />
+          </AppProvider>
+        </ThemeProvider>
+      </ErrorBoundary>
     </QueryClientProvider>
   );
 }
