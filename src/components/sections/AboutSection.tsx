@@ -73,7 +73,7 @@ const AboutSection = () => {
             >
               <img
                 className="rounded-full"
-                src="/public/src/assets/imgs/my-notion-face-portrait.png"
+                src="/src/assets/imgs/my-notion-face-portrait.png"
                 alt="프로필 이미지"
               />
             </div>
