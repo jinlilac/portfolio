@@ -30,11 +30,8 @@ export const designItem: ProjectType = {
   project_description:
     "포스터의 목적에 따라 디자인 컨셉을 정하고, Photoshop, Illustrator를 사용하여 시각적 요소를 만들었습니다. 포스터 레이아웃과 구성, 헤드라인, 텍스트 배치 등에 대한 이미지 배치, 컬러 스키마 등을 바탕으로 시작적요소를 조직하여, 완성도 높고 시선을 사로잡을 수 있도록 설계했습니다.",
   tool: ["Photoshop", "Illustrator"],
-  imgs: [
-    "/public/src/assets/imgs/design.jpg",
-    "/public/src/assets/imgs/design_2.png",
-  ],
-  img_url: "/public/src/assets/imgs/design.jpg",
+  imgs: ["/src/assets/imgs/poster.jpg", "/src/assets/imgs/poster2.png"],
+  img_url: "/src/assets/imgs/poster.jpg",
   site_link: "",
   git_link: "",
   figma_link: "",
