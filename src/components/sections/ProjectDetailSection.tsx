@@ -6,7 +6,7 @@ import Modal from "@/components/ui/Modal";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import { ProjectType } from "@/types/project";
-import { ExternalLink, Github, Figma } from "lucide-react";
+import { ExternalLink, Github, Figma, Notebook } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -36,6 +36,7 @@ export const designItem: ProjectType = {
   site_link: "",
   git_link: "",
   figma_link: "",
+  velog_link: "",
   order: 0,
   show: true,
 };
@@ -189,6 +190,19 @@ const ProjectDetailPage = () => {
                 >
                   <Github size={16} className="mr-1" />
                   GitHub
+                </Button>
+              )}
+              {project.velog_link && (
+                <Button
+                  as="a"
+                  href={project.velog_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outline"
+                  size="sm"
+                >
+                  <Notebook size={16} className="mr-1" />
+                  Blog
                 </Button>
               )}
               {project.figma_link && (

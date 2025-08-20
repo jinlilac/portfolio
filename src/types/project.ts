@@ -13,6 +13,7 @@ export type ProjectType = {
   project_description: string;
   site_link?: string;
   git_link?: string;
+  velog_link?: string;
   figma_link?: string;
   img_url?: string;
   imgs?: string[];
