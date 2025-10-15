@@ -7,6 +7,7 @@ export type ProjectType = {
   order: number;
   project_name: string;
   contribution: string;
+  operate?: string;
   project_range: string;
   project_term: string;
   tool: string[];

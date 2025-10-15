@@ -43,7 +43,6 @@ export const designItem: ProjectType = {
 
 const ProjectDetailPage = () => {
   const { id } = useParams<{ id: string }>();
-  console.log("id", id);
   const navigate = useNavigate();
 
   const projectId = parseInt(id || "0", 10);
@@ -54,10 +53,6 @@ const ProjectDetailPage = () => {
     error,
     isError,
   } = useQuery<ProjectType>(ProjectDetailQuery(projectId));
-  // console.log(isDesign);
-  // const project = projectId === 999 ? designItem : data;
-
-  // console.log(project);
 
   return (
     <Modal
@@ -93,7 +88,7 @@ const ProjectDetailPage = () => {
               loop
               spaceBetween={20}
               slidesPerView={1}
-              className="w-full h-64 rounded-lg overflow-hidden"
+              className="w-full h-96 rounded-lg overflow-hidden"
             >
               {project.imgs && project.imgs.length > 0 ? (
                 project.imgs.map((url, idx) => (
@@ -104,7 +99,7 @@ const ProjectDetailPage = () => {
                     <img
                       src={url}
                       alt={`${project.project_name} screenshot ${idx + 1}`}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </SwiperSlide>
                 ))
@@ -113,7 +108,7 @@ const ProjectDetailPage = () => {
                   <img
                     src={project.img_url}
                     alt={project.project_name}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </SwiperSlide>
               )}
@@ -129,6 +124,12 @@ const ProjectDetailPage = () => {
                   <span className="font-semibold mr-1">기여도:</span>
                   <span>{project.contribution}</span>
                 </div>
+                {project.operate && (
+                  <div className="flex items-center text-sm text-gray-700 dark:text-gray-300">
+                    <span className="font-semibold mr-1">서비스 운영:</span>
+                    <span>{project.operate}</span>
+                  </div>
+                )}
               </div>
 
               <div className="pt-2">
@@ -176,7 +177,7 @@ const ProjectDetailPage = () => {
                   size="sm"
                 >
                   <ExternalLink size={16} className="mr-1" />
-                  Live Demo
+                  Web link
                 </Button>
               )}
               {project.git_link && (
