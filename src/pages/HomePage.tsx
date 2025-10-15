@@ -2,7 +2,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import ProjectsSection from "@/components/sections/ProjectSection";
-import SkillsSection from "@/components/sections/SkillsSection";
+import ReSkillsSection from "@/components/sections/RenewalSkillsSection";
 import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
@@ -64,7 +64,7 @@ const HomePage = () => {
 
         {/* Skills Section */}
         <section id="skills" aria-labelledby="skills-heading">
-          <SkillsSection />
+          <ReSkillsSection />
         </section>
 
         {/* Projects Section */}

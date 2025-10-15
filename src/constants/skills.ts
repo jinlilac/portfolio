@@ -62,7 +62,7 @@ export const skills: Skill[] = [
   },
   {
     name: "Sass/SCSS",
-    level: 75,
+    level: 40,
     category: "styling",
     icon: "Sass",
     description: "변수, 중첩, 믹스인을 활용한 CSS 전처리",
@@ -136,20 +136,6 @@ export const skills: Skill[] = [
   },
 
   // Backend (기본 수준)
-  // {
-  //   name: "Node.js",
-  //   level: 60,
-  //   category: "backend",
-  //   icon: "NodeJs",
-  //   description: "JavaScript 런타임, API 개발 기본기",
-  // },
-  // {
-  //   name: "Express.js",
-  //   level: 55,
-  //   category: "backend",
-  //   icon: "Express",
-  //   description: "Node.js 웹 프레임워크, RESTful API",
-  // },
   {
     name: "Supabase",
     level: 65,
@@ -174,7 +160,7 @@ export const skillsByCategory = {
     (skill) => skill.category === "stateManagement"
   ),
   tools: skills.filter((skill) => skill.category === "tools"),
-  backend: skills.filter((skill) => skill.category === "backend"),
+  // backend: skills.filter((skill) => skill.category === "backend"),
   // design: skills.filter((skill) => skill.category === "design"),
 };
 
@@ -184,8 +170,6 @@ export const categoryLabels = {
   styling: "Styling",
   stateManagement: "State Management",
   tools: "Tools & Build",
-  backend: "Backend",
-  // design: "Design",
 };
 
 // 숙련도별 스킬 분류
