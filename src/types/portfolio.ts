@@ -20,7 +20,7 @@ export interface Experience {
   company: string;
   position: string;
   description: string;
-  achievements?: string[];
+  achievements?: string;
   type: "work" | "education";
 }
 

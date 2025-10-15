@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 import Container from "@/components/layout/Container";
 import Card from "@/components/ui/Card";
 import {
-  achievements,
+  performanceIndicators,
   education,
   experiences,
   personalInfo,
@@ -17,6 +17,7 @@ interface TimelineItem {
   subtitle: string;
   period: string;
   description: string;
+  achievements?: string;
   type: "work" | "education";
 }
 
@@ -29,6 +30,7 @@ const AboutSection = () => {
       subtitle: exp.company,
       period: exp.period,
       description: exp.description,
+      achievements: exp.achievements,
       type: "work" as const,
     })),
     ...education.map((edu) => ({
@@ -37,6 +39,7 @@ const AboutSection = () => {
       subtitle: edu.institution,
       period: edu.period,
       description: edu.description || "",
+      achievements: edu.achievement || "",
       type: "education" as const,
     })),
   ].sort((a, b) => {
@@ -97,7 +100,7 @@ const AboutSection = () => {
 
           {/* 소개글 */}
           <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-800">
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-wrap">
               {personalInfo.description}
             </p>
           </div>
@@ -112,7 +115,7 @@ const AboutSection = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"
       >
-        {achievements.map((achievement, index) => (
+        {performanceIndicators.map((achievement, index) => (
           <motion.div
             key={achievement.label}
             initial={{ opacity: 0, scale: 0.9 }}
@@ -181,8 +184,13 @@ const AboutSection = () => {
                         {item.period}
                       </p>
                       {item.description && (
-                        <p className="text-sm text-gray-600 dark:text-gray-300">
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-1">
                           {item.description}
+                        </p>
+                      )}
+                      {item.achievements && (
+                        <p className="text-xs text-gray-500 dark:text-gray-400">
+                          - {item.achievements}
                         </p>
                       )}
                     </div>

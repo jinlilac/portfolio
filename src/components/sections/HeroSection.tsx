@@ -62,16 +62,16 @@ const HeroSection = () => {
 
       <Container className="relative z-10 text-center space-y-6">
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-gray-100"
+          className="text-4xl md:text-6xl md:leading-[1.2] font-extrabold text-gray-900 dark:text-gray-100"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          안녕하세요, 저는 <br />
+          사용자 접근성을 최우선으로 하는, <br />
           <span className="gradient-text text-primary-500">
-            {personalInfo.name}
+            프론트엔드 개발자 {personalInfo.name}
           </span>
-          입니다
+          입니다.
         </motion.h1>
 
         <motion.div
