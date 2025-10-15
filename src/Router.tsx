@@ -11,7 +11,9 @@ const SuspenseWrapper = ({ children }: { children: React.ReactNode }) => (
 );
 const HomePage = lazy(() => import("@/pages/HomePage"));
 const AboutPage = lazy(() => import("@/components/sections/AboutSection"));
-const SkillsPage = lazy(() => import("@/components/sections/SkillsSection"));
+const SkillsPage = lazy(
+  () => import("@/components/sections/RenewalSkillsSection")
+);
 const ProjectsPage = lazy(() => import("@/components/sections/ProjectSection"));
 const ProjectDetailPage = lazy(
   () => import("@/components/sections/ProjectDetailSection")
