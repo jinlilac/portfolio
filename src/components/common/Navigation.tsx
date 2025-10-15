@@ -18,14 +18,14 @@ const Navigation = ({ vertical = false }: { vertical?: boolean }) => {
   const activeSection =
     pathname === "/" ? "home" : pathname.replace(/^\/+/, "").split("/")[0];
 
-  const base = "px-4 py-2 font-medium transition";
+  const base = "px-4 py-2 text-xl font-medium transition";
   const activeCls = "text-primary-500 dark:text-primary-400";
   const normalCls =
     "text-gray-600 hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400";
 
   return (
     <nav aria-label="메인 메뉴">
-      <ul className={`flex ${vertical ? "flex-col gap-4" : "gap-2 lg:gap-4"}`}>
+      <ul className={`flex ${vertical ? "flex-col gap-6" : "gap-2 lg:gap-4"}`}>
         {NAV.map(({ id, label, path }) => (
           <li key={id}>
             <Link

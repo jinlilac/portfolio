@@ -34,7 +34,7 @@ const Modal = ({ isOpen, onClose, title, children }: Props) => (
           className="fixed inset-0 z-60 flex items-center justify-center p-4"
         >
           <div
-            className="bg-white dark:bg-gray-900 rounded-lg shadow-lg w-full max-w-xl max-h-[90vh] overflow-hidden flex flex-col"
+            className="bg-white dark:bg-gray-900 rounded-lg shadow-lg w-full max-w-xl md:max-w-3xl lg:max-w-4xl max-h-[95vh] overflow-hidden flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             <header className="relative flex items-center justify-center p-4 border-b border-gray-200 dark:border-gray-700">

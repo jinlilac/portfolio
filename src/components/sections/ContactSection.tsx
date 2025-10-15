@@ -56,7 +56,7 @@ const ContactSection = () => {
         >
           <Card className="p-8">
             <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-            <p className="mb-4">{personalInfo.goals}</p>
+            <p className="mb-4 whitespace-pre-wrap">{personalInfo.goals}</p>
             <p className="flex items-center gap-2 mb-2">
               <Mail /> {personalInfo.email}
             </p>

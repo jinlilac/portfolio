@@ -55,13 +55,13 @@ const Layout = () => {
         id="main-content"
         role="main"
         className={`
-          lg:ml-80 min-h-screen flex flex-col
-          transition-all duration-300 ease-in-out
+          lg:ml-80 flex flex-col h-dvh 
+          transition-all duration-300 ease-in-out 
           ${isMobileMenuOpen ? "lg:ml-80" : ""}
         `}
         tabIndex={-1}
       >
-        <div className="flex-1 pt-16 lg:pt-0">
+        <div className="flex-1 pt-16 lg:pt-0 h-[calc(100dvh-69px)] overflow-scroll">
           <Outlet />
         </div>
 
