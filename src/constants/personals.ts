@@ -26,6 +26,16 @@ export const personalInfo: PersonalInfo = {
 export const experiences: Experience[] = [
   {
     id: 1,
+    period: "2025.11.9 ~ 2주",
+    company: "(주)가디아 소프트",
+    position: "북경 현대차 IT 화면 개발 통번역 프리랜서",
+    description:
+      "엑셀을 활용한 데이터 라벨링, 한/중 통번역 업무, 화면 테스트 QA 작성",
+    achievements: "",
+    type: "work",
+  },
+  {
+    id: 2,
     period: "2025.03 ~ 2025.05",
     company: "스티치(STITCH)",
     position: "프론트엔드 개발 사원",
@@ -35,7 +45,7 @@ export const experiences: Experience[] = [
     type: "work",
   },
   {
-    id: 2,
+    id: 3,
     period: "2024.08 ~ 2025.01",
     company: "(주) 세레머니",
     position: "프론트엔드 개발 사원",
@@ -45,7 +55,7 @@ export const experiences: Experience[] = [
     type: "work",
   },
   {
-    id: 3,
+    id: 4,
     period: "2021.12 ~ 2022.03",
     company: "LG CNS",
     position: "재무 및 경영지원 인턴",
