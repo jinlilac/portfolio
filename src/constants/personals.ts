@@ -28,7 +28,8 @@ export const experiences: Experience[] = [
     id: 1,
     period: "2025.11.9 ~ 2주",
     company: "(주)가디아 소프트",
-    position: "북경 현대차 IT 화면 개발 통번역 프리랜서",
+    position:
+      "중국 현지 기업 클라우드 형 전산 시스템 화면 개발 QA 및 통번역 프리랜서",
     description:
       "엑셀을 활용한 데이터 라벨링, 한/중 통번역 업무, 화면 테스트 QA 작성",
     achievements: "",
