@@ -54,10 +54,10 @@ export const skills: Skill[] = [
     description: "CSS-in-JS, 동적 스타일링, 테마 시스템",
   },
   {
-    name: "Tailwind CSS",
+    name: "TailwindCSS",
     level: 80,
     category: "styling",
-    icon: "TailwindCss",
+    icon: "TailwindCSS",
     description: "Utility-first CSS, 빠른 프로토타이핑, 반응형 디자인",
   },
   {
@@ -137,18 +137,18 @@ export const skills: Skill[] = [
 
   // Backend (기본 수준)
   {
+    name: "Node.js",
+    level: 65,
+    category: "backend",
+    icon: "Node.js",
+    description: "인증, 데이터베이스, 호스팅, 클라우드 함수",
+  },
+  {
     name: "Supabase",
     level: 65,
     category: "backend",
     icon: "Supabase",
     description: "BaaS, 실시간 데이터베이스, 인증",
-  },
-  {
-    name: "Firebase",
-    level: 65,
-    category: "backend",
-    icon: "Firebase",
-    description: "인증, 데이터베이스, 호스팅, 클라우드 함수",
   },
 ];
 
@@ -160,13 +160,14 @@ export const skillsByCategory = {
     (skill) => skill.category === "stateManagement"
   ),
   tools: skills.filter((skill) => skill.category === "tools"),
-  // backend: skills.filter((skill) => skill.category === "backend"),
+  backend: skills.filter((skill) => skill.category === "backend"),
   // design: skills.filter((skill) => skill.category === "design"),
 };
 
 // 카테고리 라벨 매핑
 export const categoryLabels = {
   frontend: "Frontend",
+  backend: "Backend",
   styling: "Styling",
   stateManagement: "State Management",
   tools: "Tools & Build",

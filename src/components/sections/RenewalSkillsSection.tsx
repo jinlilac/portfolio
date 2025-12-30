@@ -160,6 +160,7 @@ const ReSkillsSection = () => {
 function getCategoryIcon(category: CategoryKey): string {
   const iconMap: Record<CategoryKey, string> = {
     frontend: "💻",
+    backend: "📊",
     styling: "🎨",
     stateManagement: "🔄",
     tools: "🛠️",
@@ -177,24 +178,27 @@ function getSkillIcon(skillName: string): string {
     HTML5: "H5",
     CSS3: "C3",
     TailwindCSS: "🌊",
+    "Styled Components": "💎",
     Sass: "🎨",
-    "Node.js": "🟢",
+    "Node.js": "V8",
     Python: "🐍",
     Java: "☕",
     Spring: "🍃",
     Express: "🚀",
-    FastAPI: "⚡",
+    Vite: "⚡",
     MongoDB: "🍃",
-    PostgreSQL: "🐘",
+    Supabase: "🐘",
     MySQL: "🗄️",
-    Redis: "🔴",
+    Recoil: "🟢",
+    Zustand: "⚡️",
+    "React Query": "🔷",
     Git: "🌳",
     Docker: "🐳",
     AWS: "☁️",
     Vercel: "▲",
     Figma: "🎨",
     Photoshop: "PS",
-    Sketch: "💎",
+    Webpack: "💎",
   };
   return icons[skillName] || "💻";
 }
@@ -263,6 +267,10 @@ function getSkillDescription(skillName: string): string {
     AWS: "클라우드 인프라 설계와 서버리스 아키텍처를 통한 확장 가능한 서비스 구축",
     Figma:
       "디자인 시스템 구축과 개발자 핸드오프를 통한 효율적인 UI/UX 협업 주도",
+    "Node.js":
+      "Express 서버에서 GET, POST, PUT, DELETE 처리 등 자바스크립트로 백엔드 구현",
+    Supabase:
+      "포트폴리오, House-connect 프로젝트에 적용, Cors 설정으로 보안 강화",
   };
   return (
     descriptions[skillName] ||
