@@ -25,7 +25,7 @@ const HeroSection = () => {
       delay: Math.random() * 2,
       duration: 3 + Math.random() * 2,
       size: Math.random() * 4 + 2,
-    }))
+    })),
   );
 
   return (
@@ -88,7 +88,7 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.p
-          className="max-w-xl mx-auto text-lg text-gray-700 dark:text-gray-300"
+          className="max-w-xl mx-auto text-lg text-gray-700 dark:text-gray-300 text-balance"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}

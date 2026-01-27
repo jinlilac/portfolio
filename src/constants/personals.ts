@@ -14,7 +14,7 @@ export const personalInfo: PersonalInfo = {
   title: "Frontend Developer",
   subtitle: "React 전문가 • UI/UX 디자인 • 프로젝트 기획 ",
   introduction:
-    "UI/UX 디자인과 구현, 두 영역 모두에 흥미를 가지고 있습니다. 다양한 직군과 협업하여 웹·앱 서비스를 직접 출시한 경험이 있으며, 4년간 중국 유학 경험을 바탕으로 글로벌 환경에서도 원활한 커뮤니케이션이 가능합니다.",
+    "UI/UX 웹 기획부터 디자인, 화면 개발, API 연동 모두 좋아합니다.다양한 직군과 협업하여 웹·앱 출시 경험이 있으며, 유학 경험을 바탕으로 글로벌 환경에서 원활한 커뮤니케이션이 가능합니다.",
   description:
     "1인분은 확실히 해내는 개발자입니다. 주어진 역할을 성실히 해내며, 혼자보다 함께 성장하는 과정을 소중히 여깁니다. \n이 끈기와 열정적인 태도로 더 나은 해결책과 더 나은 코드를 만드는 개발자가 되겠습니다.",
   location: "서울, 대한민국",
@@ -133,12 +133,6 @@ export const contactInfo: ContactInfo = {
       url: "https://www.linkedin.com/in/suhyun-kim-coduit",
       icon: "Linkedin",
       color: "#0077B5",
-    },
-    {
-      name: "Email",
-      url: "mailto:coduit.99@gmail.com",
-      icon: "Mail",
-      color: "#EA4335",
     },
     {
       name: "Blog",

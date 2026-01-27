@@ -17,7 +17,7 @@ const SocialLinks = ({ className = "" }: { className?: string }) => (
             className="transition-transform hover:scale-110"
             style={{ color }}
           >
-            <Icon size={20} />
+            <Icon size={26} />
           </a>
         </li>
       );

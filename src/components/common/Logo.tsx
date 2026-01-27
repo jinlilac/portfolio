@@ -12,7 +12,7 @@ const Logo = ({ size = 32 }: { size?: number }) => (
       viewBox="0 0 64 64"
       fill="none"
       stroke="currentColor"
-      strokeWidth={2}
+      strokeWidth={3}
       strokeLinecap="round"
       strokeLinejoin="round"
       className="text-primary-500"
