@@ -28,7 +28,7 @@ const getSystemTheme = (): Theme => {
       ? "dark"
       : "light";
   }
-  return "light";
+  return "dark";
 };
 
 // 로컬 스토리지에서 테마 불러오기
